@@ -1,0 +1,127 @@
+:root {
+    --base-color: white;
+    --base-variant: rgb(242, 242, 242);
+    --text-color: black;
+}
+
+.darkmode {
+    --base-color: black;
+    --base-variant: rgb(14, 13, 13);
+    --text-color: white;
+}
+
+.english {
+    --flag-url: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.portuguese {
+    --flag-url: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+    
+body {
+    background-color: var(--base-color);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    align-items: center;
+    background-color: var(--base-color);
+}
+
+header img {
+    height: 25px;
+    width: 25px;
+    padding: 0 20px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch span:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch span:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch span:last-child {
+    display: block;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+#lang-switch {
+    width: 50px;
+    background-image: var(--flag-url);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION 2 COLUNAS */
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 50px;
+}
+
+section img {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+
+section div {
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
