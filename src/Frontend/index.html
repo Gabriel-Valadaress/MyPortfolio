@@ -7,26 +7,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode" />
     <script type="text/javascript" src="scripts/darkmode.js" defer></script>
     <script type="text/javascript" src="scripts/langmode.js" defer></script>
-    <title>Gabriel</title>
+    <title>>_ Gabriel Valadares</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li id="about"></li>
+            <li id="skills"></li>
+            <li id="projects"></li>
+            <li id="contact"></li>
         </ul>
         <div>
+            <p id="lang-switch"></p>
             <div id="theme-switch">
                 <span class="material-symbols-outlined">dark_mode</span><span class="material-symbols-outlined">light_mode</span>
             </div>
-            <div id="lang-switch"></div>
         </div>
     </header>
-    <section>
-        <img src="" alt="personalPhoto">
-        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus corporis vero laudantium tenetur. Aliquam sed alias tempora! Eveniet, quidem consequuntur alias a quia mollitia repellendus quisquam. Qui fuga earum quam.</div>
+    <section id="about-section" class="content-section">
+        <img src="personalPhoto.jpeg" alt="Personal Photo">
+        <p id="aboutMe"></p>
+    </section>
+    <section id="skills-section" class="content-section tech-stack">
+        <div class="row">
+            <img src="images/csharp.png" alt="C# icon">
+            <img src="images/dotnet.png" alt=".NET icon">
+            <img src="images/efcore.png" alt="Entity Framework Core icon">
+        </div>
+        <div class="row">
+            <img src="images/sqlserver.jpg" alt="SQL Server icon">
+            <img src="images/azuredevops.png" alt="Azure DevOps icon">
+            <img src="images/sonarqubecloud.png" alt="SonarQube icon">
+        </div>
+        <div class="row">
+            <img src="images/html.jpg" alt="HTML5 icon">
+            <img src="images/css.png" alt="CSS3 icon">
+            <img src="images/javascript.png" alt="JavaScript icon">
+        </div>
+        <div class="row">
+            <img src="images/docker.png" alt="Docker icon">
+            <img src="images/xunity.png" alt="xUnit icon">
+        </div>
+    </section>
+    <section id="projects-section" class="content-section">
+    </section>
+    <section id="contact-section" class="content-section">
+        <h2>Contact</h2>
+        <p>Email: gabriel@example.com<br>LinkedIn: linkedin.com/in/gabrielvaladares</p>
     </section>
     <script src="scripts/script.js"></script>
 </body>
