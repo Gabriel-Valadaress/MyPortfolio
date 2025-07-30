@@ -35,7 +35,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#about-section h3 {
+    font-size: 0.93rem;
     text-align: center;
 }
 
@@ -197,7 +202,7 @@ section {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 #about-section div {
@@ -211,7 +216,7 @@ h1 {
 
 #about-section div img {
   grid-area: image;
-  height: 100%;
+  width: 60%;
 }
 
 aside {
