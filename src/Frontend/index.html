@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode" />
     <script type="text/javascript" src="scripts/darkmode.js" defer></script>
     <script type="text/javascript" src="scripts/langmode.js" defer></script>
+    <script type="text/javascript" src="scripts/contact.js" defer></script>
     <title>>_ Gabriel Valadares</title>
 </head>
 <body>
@@ -18,43 +19,236 @@
             <li id="contact"></li>
         </ul>
         <div>
-            <p id="lang-switch"></p>
+            <div class="dropdown" id="lang-switch">
+                <button class="dropdown-toggle" id="current-lang"></button>
+                <ul class="dropdown-menu">
+                    <li data-lang="portuguese">POR 🇧🇷</li>
+                    <li data-lang="english">ENG 🇺🇸</li>
+                </ul>
+            </div>
             <div id="theme-switch">
                 <span class="material-symbols-outlined">dark_mode</span><span class="material-symbols-outlined">light_mode</span>
             </div>
         </div>
     </header>
     <section id="about-section" class="content-section">
-        <img src="personalPhoto.jpeg" alt="Personal Photo">
+      <h1></h1>
+      <h3 id="backend"></h3>
+      <div>
+        <img src="images/foto.svg" alt="Personal Photo">
         <p id="aboutMe"></p>
+      </div>
     </section>
     <section id="skills-section" class="content-section tech-stack">
-        <div class="row">
-            <img src="images/csharp.png" alt="C# icon">
-            <img src="images/dotnet.png" alt=".NET icon">
-            <img src="images/efcore.png" alt="Entity Framework Core icon">
+      <h3 id="stacks"></h3>
+      <div class="row">
+        <div class="tooltip">
+          <img src="images/csharp.svg" alt="C# icon">
+          <span class="tooltiptext">C#</span>
         </div>
-        <div class="row">
-            <img src="images/sqlserver.jpg" alt="SQL Server icon">
-            <img src="images/azuredevops.png" alt="Azure DevOps icon">
-            <img src="images/sonarqubecloud.png" alt="SonarQube icon">
+        <div class="tooltip">
+          <img src="images/dotnet.svg" alt=".NET icon">
+          <span class="tooltiptext">.NET</span>
         </div>
-        <div class="row">
-            <img src="images/html.jpg" alt="HTML5 icon">
-            <img src="images/css.png" alt="CSS3 icon">
-            <img src="images/javascript.png" alt="JavaScript icon">
+        <div class="tooltip">
+          <img src="images/efcore.svg" alt="Entity Framework Core icon">
+          <span class="tooltiptext">Entity Framework Core</span>
         </div>
-        <div class="row">
-            <img src="images/docker.png" alt="Docker icon">
-            <img src="images/xunity.png" alt="xUnit icon">
+        <div class="tooltip">
+          <img src="images/x-unity.svg" alt="xUnit icon">
+          <span class="tooltiptext">xUnit</span>
         </div>
+        <div class="tooltip">
+          <img src="images/sqlserver.svg" alt="SQL Server icon">
+          <span class="tooltiptext">SQL Server</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/sonarqube.svg" alt="SonarQube icon">
+          <span class="tooltiptext">SonarQube</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/docker.svg" alt="Docker icon">
+          <span class="tooltiptext">Docker</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/azure-devops.svg" alt="Azure DevOps icon">
+          <span class="tooltiptext">Azure DevOps</span>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="tooltip">
+          <img src="images/visualstudio.svg" alt="Visual Studio icon">
+          <span class="tooltiptext">Visual Studio</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/vscode.svg" alt="VS Code icon">
+          <span class="tooltiptext">Visual Studio Code</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/git.svg" alt="Git icon">
+          <span class="tooltiptext">Git</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/dark-github.svg" alt="GitHub icon" id="githubImage">
+          <span class="tooltiptext">GitHub</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/archlinux.svg" alt="Linux icon">
+          <span class="tooltiptext">Linux</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/windows.svg" alt="Windows icon">
+          <span class="tooltiptext">Windows</span>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="tooltip">
+          <img src="images/html.svg" alt="HTML5 icon">
+          <span class="tooltiptext">HTML5</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/css.svg" alt="CSS3 icon">
+          <span class="tooltiptext">CSS3</span>
+        </div>
+        <div class="tooltip">
+          <img src="images/javascript.svg" alt="JavaScript icon">
+          <span class="tooltiptext">JavaScript</span>
+        </div>
+      </div>
     </section>
+
     <section id="projects-section" class="content-section">
+      <h3 id="projectsSection"></h3>
+      <div class="project-row">
+        <div class="projectContainer"> 
+          <span class="tooltip">
+            <a href="https://github.com/Gabriel-Valadaress/Quiz-Game" target="_blank" rel="noopener noreferrer"><h3 id="firstProjecth3"></h3></a>
+            <span class="tooltiptext">GitHub</span>
+            </span>
+            </span>
+            <p id="firstProjectp"></p>
+            <div>
+              <span class="tooltip">
+                <img src="images/csharp.svg" alt="c# icon">
+                <span class="tooltiptext">C#</span>
+              </span>  
+                <span class="tooltip">
+                <img src="images/dotnet.svg" alt="dotnet icon">
+                <span class="tooltiptext">.NET</span>
+              </span>
+              <span class="tooltip">
+                <img src="images/efcore.svg" alt="entity framework core icon">
+                <span class="tooltiptext">EntityFramework Core </span>
+              </span>
+              <span class="tooltip">
+                <img src="images/sqlserver.svg" alt="sql server icon">
+                <span class="tooltiptext">SQL Server</span>
+              </span>
+                <span class="tooltip">
+                <img src="images/visualstudio.svg" alt="visual studio icon">
+                <span class="tooltiptext">Visual Studio</span>
+              </span>
+            </div>
+        </div>
+        <div class="projectContainer"> 
+          <span class="tooltip">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <h3 id="secondProjecth3"></h3>
+            </a>
+            <span class="tooltiptext">GitHub</span>
+          </span>
+            <p id="secondProjectp"></p>
+            <div>
+              <span class="tooltip">
+                <img src="images/csharp.svg" alt="c# icon">
+                <span class="tooltiptext">C#</span>
+              </span>
+              <span class="tooltip">
+                <img src="images/dotnet.svg" alt="dotnet icon">
+                <span class="tooltiptext">.NET</span>
+              </span>
+              <span class="tooltip">
+                <img src="images/visualstudio.svg" alt="visual studio icon">
+                <span class="tooltiptext">Visual Studio</span>
+              </span>
+            </div>
+        </div>
+        <div class="projectContainer"> 
+          <span class="tooltip">
+            <a href="https://github.com/Gabriel-Valadaress/Quiz-Game" target="_blank" rel="noopener noreferrer"><h3 id="thirdProjecth3"></h3></a>
+            <span class="tooltiptext">GitHub</span>
+          </span>
+            <p id="thirdProjectp"></p>
+            <div>
+              <span class="tooltip">
+                <img src="images/html.svg" alt="html icon">
+                <span class="tooltiptext">HTML</span>
+              </span>
+              <span class="tooltip">
+                <img src="images/css.svg" alt="css icon">
+                <span class="tooltiptext">CSS</span>
+              </span>
+              <span class="tooltip">
+                <img src="images/javascript.svg" alt="javascript icon">
+                <span class="tooltiptext">JavaScript</span>
+              </span>
+            </div>
+        </div>
+      </div>
     </section>
     <section id="contact-section" class="content-section">
-        <h2>Contact</h2>
-        <p>Email: gabriel@example.com<br>LinkedIn: linkedin.com/in/gabrielvaladares</p>
+      <h2 id="letstalk"></h2>
+      <form id="contact-form">
+        <div class="name-lastname">
+          <div class="name">
+            <label for="firstName" id="firstnamelabel"></label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="lastName">
+            <label for="lastName" id="lastnamelabel"></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="emailContact">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="subjectContact">
+          <label for="subject" id="subjectlabel"></label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+
+        <div class="messageContact">
+          <label for="message" id="messagelabel"></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" id="submit"></button>
+      </form>
     </section>
+    <footer id="main-footer">
+      <h4 id="footerh4"></h4>
+      <div>
+        <a href="https://www.linkedin.com/in/gabriel-valadares/" target="_blank" rel="noopener noreferrer" class="linkIcons tooltip">
+          <img src="images/linkedin.svg" alt="LinkedIn">
+          <span class="tooltiptext">LinkedIn</span>
+        </a>
+        <a href="https://github.com/Gabriel-Valadaress" target="_blank" rel="noopener noreferrer" class="linkIcons tooltip">
+          <img id="githubImageFooter" src="images/dark-github.svg" alt="GitHub">
+          <span class="tooltiptext">GitHub</span>
+        </a>
+        <a href="" class="linkIcons tooltip" data-copy="gabrieloliveiravaladares@gmail.com" id="emailCopy">
+          <img src="images/gmail.svg" alt="email">
+          <span class="tooltiptext">gabrieloliveiravaladares@gmail.com</span>
+          <span class="copy-popup" id="copypopup"></span>
+        </a>
+      </div>
+      <p id="developedBy" class="footer-note"></p>
+    </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>
