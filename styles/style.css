@@ -736,7 +736,7 @@ h1 {
 
 #about-section div img {
   grid-area: image;
-  height: 100%;
+  width: 60%;
 }
 
 aside {
@@ -1256,7 +1256,7 @@ h1 {
 
 #about-section div img {
   grid-area: image;
-  height: 100%;
+  width: 60%;
 }
 
 aside {
@@ -1770,7 +1770,7 @@ h1 {
 
 #about-section div img {
   grid-area: image;
-  height: 100%;
+  width: 60%;
 }
 
 aside {
@@ -2272,7 +2272,7 @@ h1 {
 
 #about-section div img {
   grid-area: image;
-  height: 100%;
+  width: 60%;
 }
 
 aside {
